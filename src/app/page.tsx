@@ -1,11 +1,18 @@
 "use client";
 
-import { ImgRotateForward, Textfade } from "@/components";
+import {
+  ImgRotateForward,
+  Box,
+  Textfade,
+} from "@/components";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-2 h-screen w-screen items-center justify-center">
-      <Textfade />
+    <div
+      className={`flex flex-col h-auto max-w-screen gap-2 min-h-screen w-auto items-center justify-center`}
+    >
+      {/* <Textfade />
+      <Box /> */}
       <ImgRotateForward />
     </div>
   );

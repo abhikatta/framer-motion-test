@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 
 const Textfade = () => {
   return (
-    <motion.div>
+    <motion.div layout transition={{ delay: 1 }}>
       <motion.p
+        layout
+        transition={{ duration: 2, delay: 1 }}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}>
+        animate={{ opacity: 1 }}>
         Unlock data-backed strategies to secure your perfect college{" "}
         <motion.span
           initial={{ scale: 0, opacity: 0 }}
