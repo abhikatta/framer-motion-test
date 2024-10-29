@@ -9,7 +9,7 @@
 //     await animate(
 //       ref.current.children[0],
 //       {
-//         top: "3rem",
+//         top: "5%",
 //         width: "65vw",
 //         zIndex: 1,
 //         position: "absolute",
@@ -19,7 +19,7 @@
 //     await animate(
 //       ref.current.children[0],
 //       {
-//         top: "6rem",
+//         top: "10%",
 //         width: "70vw",
 //         zIndex: 2,
 //         position: "absolute",
@@ -29,7 +29,7 @@
 //     await animate(
 //       ref.current.children[0],
 //       {
-//         top: "9rem",
+//         top: "15%",
 //         width: "75vw",
 //         zIndex: 3,
 //         position: "absolute",
@@ -56,7 +56,7 @@
 //     await animate(
 //       ref.current.children[1],
 //       {
-//         top: "6rem",
+//         top: "10%",
 //         width: "70vw",
 //         zIndex: 2,
 //         position: "absolute",
@@ -66,7 +66,7 @@
 //     await animate(
 //       ref.current.children[1],
 //       {
-//         top: "9rem",
+//         top: "15%",
 //         width: "75vw",
 //         zIndex: 3,
 //         position: "absolute",
@@ -79,7 +79,7 @@
 //     await animate(
 //       ref.current.children[1],
 //       {
-//         top: "3rem",
+//         top: "5%",
 //         width: "65vw",
 //         opacity: 0,
 //         zIndex: 0,
@@ -108,7 +108,7 @@
 //           top: 0,
 //         }}
 //         // animate={{
-//         //   top: "3rem",
+//         //   top: "5%",
 //         //   width: "65vw",
 //         //   zIndex: 1,
 //         // }}
@@ -125,7 +125,7 @@
 //           width: "65vw",
 //           zIndex: 1,
 //           position: "absolute",
-//           top: "3rem",
+//           top: "5%",
 //         }}
 //         // animate={{
 //         //   width: "70vw",
@@ -183,7 +183,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[0],
       {
-        top: "3rem",
+        top: "5%",
         width: "70vw",
         zIndex: 1,
         position: "absolute",
@@ -193,7 +193,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[0],
       {
-        top: "6rem",
+        top: "10%",
         width: "75vw",
         zIndex: 2,
         position: "absolute",
@@ -203,7 +203,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[0],
       {
-        top: "9rem",
+        top: "15%",
         width: "75vw",
         zIndex: 3,
         position: "absolute",
@@ -232,7 +232,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[1],
       {
-        top: "6rem",
+        top: "10%",
         width: "75vw",
         zIndex: 1,
         position: "absolute",
@@ -242,7 +242,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[1],
       {
-        top: "9rem",
+        top: "15%",
         width: "75vw",
         zIndex: 2,
         position: "absolute",
@@ -266,7 +266,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[1],
       {
-        top: "3rem",
+        top: "5%",
         width: "70vw",
         zIndex: 1,
         position: "absolute",
@@ -281,7 +281,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[2],
       {
-        top: "9rem",
+        top: "15%",
         width: "75vw",
         zIndex: 2,
         position: "absolute",
@@ -306,7 +306,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[2],
       {
-        top: "3rem",
+        top: "5%",
         width: "70vw",
         zIndex: 1,
         position: "absolute",
@@ -316,7 +316,7 @@ const ImgRotateForward = () => {
     await animate(
       ref.current.children[2],
       {
-        top: "6rem",
+        top: "10%",
         width: "75vw",
         zIndex: 2,
         position: "absolute",
@@ -333,37 +333,39 @@ const ImgRotateForward = () => {
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className="flex justify-center items-center w-full max-w-screen h-auto min-h-screen relative"
-    >
-      <motion.img
-        src="/performance.png"
-        initial={{
-          width: "65vw",
-          zIndex: 0,
-          position: "absolute",
-          top: 0,
-        }}
-      />
-      <motion.img
-        src="/profile.png"
-        initial={{
-          width: "70vw",
-          zIndex: 1,
-          position: "absolute",
-          top: "3rem",
-        }}
-      />
-      <motion.img
-        src="/dashboard.png"
-        initial={{
-          width: "75vw",
-          zIndex: 2,
-          position: "absolute",
-          top: "6rem",
-        }}
-      />
+    <div className="min-h-screen  overflow-hidden h-auto  bg-custom-gradient  pt-auto w-full max-w-screen  flex-col flex justify-center items-center  pt-[10rem]">
+      <div
+        ref={ref}
+        className="overflow-hidden  flex justify-center items-end bg-transparent w-full max-w-screen min-h-screen h-full  relative"
+      >
+        <motion.img
+          src="/performance.png"
+          initial={{
+            width: "65vw",
+            zIndex: 0,
+            position: "absolute",
+            top: 0,
+          }}
+        />
+        <motion.img
+          src="/profile.png"
+          initial={{
+            width: "70vw",
+            zIndex: 1,
+            position: "absolute",
+            top: "5%",
+          }}
+        />
+        <motion.img
+          src="/dashboard.png"
+          initial={{
+            width: "75vw",
+            zIndex: 2,
+            position: "absolute",
+            top: "10%",
+          }}
+        />
+      </div>
     </div>
   );
 };

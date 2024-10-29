@@ -44,3 +44,7 @@ body {
   animation: scale-up-animation 0.5s ease forwards; /* Corrected syntax */
   animation-delay: 1s; /* Delay the animation by 1 second */
 }
+
+.bg-custom-gradient {
+  @apply bg-[radial-gradient(243.05%_208.43%_at_50%_-96.76%,_#282828_0%,_#282828_71.08%,_#4d0da7_86.1%,_#582bb0_88.98%,_#8954f2_92.05%,_#cfc1f9_95.42%)];
+}
