@@ -7,7 +7,7 @@ const Component = () => {
     <div className="overflow=y-hidden w-auto min-w-[916px] h-auto grid grid-cols-2 gap-y-[15px] gap-x-[20px]">
       <motion.img
         initial={{ opacity: 0, x: 200 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: SLIDE_DELAY, duration: SLIDE_DURATION }}
         src="/flaunt.png"
         className=" rounded-[30px] col-span-2"
@@ -15,7 +15,7 @@ const Component = () => {
       />
       <motion.img
         initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: SLIDE_DELAY, duration: SLIDE_DURATION }}
         src="/badges.png"
         className=" rounded-[30px] "
@@ -23,7 +23,7 @@ const Component = () => {
       />
       <motion.img
         initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: SLIDE_DELAY, duration: SLIDE_DURATION }}
         src="/findYourFit.png"
         alt="img-1"

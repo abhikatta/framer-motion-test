@@ -20,7 +20,7 @@ const Box = () => {
         {isHidden && (
           <motion.div
             initial={{ rotate: 0, scale: 0, opacity: 0 }}
-            animate={{ rotate: 360, scale: 1, opacity: 1 }}
+            whileInView={{ rotate: 360, scale: 1, opacity: 1 }}
             transition={{
               duration: 1.5,
               ease: "backInOut",

@@ -107,7 +107,7 @@
 //           position: "absolute",
 //           top: 0,
 //         }}
-//         // animate={{
+//         // whileInView={{
 //         //   top: "5%",
 //         //   width: "65vw",
 //         //   zIndex: 1,
@@ -127,7 +127,7 @@
 //           position: "absolute",
 //           top: "5%",
 //         }}
-//         // animate={{
+//         // whileInView={{
 //         //   width: "70vw",
 //         //   position: "absolute",
 //         //   zIndex: 2,
@@ -150,7 +150,7 @@
 //           top: "4rem",
 //           opacity: 1,
 //         }}
-//         animate={{
+//         whileInView={{
 //           width: "60vw",
 //           zIndex: 0,
 //           position: "absolute",
