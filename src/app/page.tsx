@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  ImgRotateForward,
-  Box,
-  Textfade,
-} from "@/components";
+import { ImgRotateForward, Box, Textfade, Component } from "@/components";
 
 export default function Home() {
   return (
@@ -13,7 +9,8 @@ export default function Home() {
     >
       {/* <Textfade />
       <Box /> */}
-      <ImgRotateForward />
+      {/* <ImgRotateForward /> */}
+      <Component />
     </div>
   );
 }
