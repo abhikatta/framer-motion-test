@@ -6,18 +6,20 @@ import {
   Box,
   Textfade,
   Component,
+  TorchEffect,
 } from "@/components";
 
 export default function Home() {
   return (
     <div
-      className={`flex flex-col h-auto max-w-screen gap-2 min-h-screen w-auto items-center justify-center`}
+      className={`flex flex-col h-auto max-w-screen gap-[3rem] min-h-screen w-auto items-center justify-center`}
     >
-      <Textfade />
+      {/* <Textfade />
       <Box />
       <ImgRotateForward />
       <Component />
-      <TextReveal />
+      <TextReveal /> */}
+      <TorchEffect />
     </div>
   );
 }

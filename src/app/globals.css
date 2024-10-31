@@ -48,3 +48,18 @@ body {
 .bg-custom-gradient {
   @apply bg-[radial-gradient(243.05%_208.43%_at_50%_-96.76%,_#282828_0%,_#282828_71.08%,_#4d0da7_86.1%,_#582bb0_88.98%,_#8954f2_92.05%,_#cfc1f9_95.42%)];
 }
+
+.bg-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* background-color: red; */
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    transparent 10%,
+    rgba(0, 0, 0, 0.95) 20%
+  );
+}
